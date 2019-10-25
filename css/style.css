@@ -1,39 +1,37 @@
 
-/*background*/
+/*background color*/
 
 body{
-background : #ffc34d;
+background-color : #ffc34d;
 font-size: 16px;
 }
 
-.home .logo, .home-side {
-	background-color:  #00e6e6;
-	margin-left: 160px;	
+body.recepies {
+background-color:#ffc34d;
 }
-
 body.mango { background-color: #9ACD32; }
-body.blueberry { background-color: #00e6e6; }
+body.blueberry { background-color: #00cccc; }
 body.tropical { background-color: #ff4d4d; }
 
+/*home side*/
+.home .logo, .home-side {
+	background-color: #00cccc;
+	margin-left: 150px;}
 
+	.home-side {margin-bottom:-5em;}
 
-header {
-	display: grid;
-	grid-template-columns: 60% 40%
-}
-
-header img { margin-top:20px; 
-text-align: right;
-}
-
+/*logo*/
 .logo {
 text-align: right;
 padding-top: 25px; 
 padding-right: 90px;
 }
 
-/*page style*/
+/*page grid tropical*/
 
+.grid1 {
+	margin:auto;
+}
 .tropical .grid {
 	display: grid;
 	grid-template-columns: 50% 50%;
@@ -45,36 +43,39 @@ padding-right: 90px;
 	border: 30px solid white;
 	border-bottom: 80px solid white;}
 
-.recipes .grid1 {
+/*page grid recepies*/
+
+.recepies .grid1 {
 	display: grid;
-	grid-template-columns: 33.3% 33.3% 33.3%;
-	width: 70%;
+	grid-template-columns: 30% 30% 30%;
+	width: 90%;
+	margin:auto;
 	text-align: center;
 	grid-gap: 60px;
 }
-.recipes .grid1 img {
-	width: 80%;
+.recepies .grid1 img {
+	width: 100%;
 	border: 20px solid white;
 	border-bottom: 60px solid white;
 }
 
-.recipes .grid1 img  {
-	margin-left: 80px;
-}
+.margin-down { margin-top: 99px; }
+
+/*page grid mango*/
 
 .mango .grid {
 	display: grid;
 	grid-template-columns: 50% 50%;
 }
-.mango .grid  {width: 70%; margin: auto;}
+.mango .grid  {width: 90%; margin: auto;}
 .mango .grid img {
 	margin-left: 5px;
 	width: 90%;
 	border: 30px solid white;
-	border-right: 80px solid white;
-	transform: rotate(90deg);
+	border-bottom: 80px solid white;
 }
 
+/*page grid home*/
 
 .home .grid {
 	display: grid;
@@ -82,14 +83,24 @@ padding-right: 90px;
 }
 
 .home .grid img {
-	width: 85%;
+	width: 90%;
 	border: 30px solid white;
-	border-bottom: 100px solid white;
+	border-bottom: 90px solid white;
 }
 
 .home .grid img  {
 	margin-left: 80px;
 }
+header {
+	display: grid;
+	grid-template-columns: 60% 40%
+}
+
+header img { margin-top:20px; 
+text-align: right;
+}
+
+/*page grid blueberry*/
 
 .blueberry .grid {
 	display: grid;
@@ -157,7 +168,24 @@ p {font-family: 'Rouge Script', cursive;
   color:white;
 }
 
+.recepies .grid1 {font-family: 'Zhi Mang Xing', cursive;
+font-size : 48px;
+line-height: 3em;
+color:white;}
+
 .instructions {max-width: 400px;}
+
+/*links*/
+
+a:any-link {
+color:white;
+text-decoration:none;
+cursor: auto;}
+
+a:hover {
+	color: #568028;
+}
+
 
 /*nagavation*/
 
@@ -189,4 +217,7 @@ nav a {
   text-decoration: none;
   padding-right: 35px;
 }
+nav a:hover {
+	border-bottom: 3px;
+	color: #568028;}
 
